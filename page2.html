@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TUTOR TIME</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="page2.css">
+
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#about">ABOUT US</a>
+                <div>
+                    <a href="#login">LOGIN</a> <span class="text-light">|</span> <a href="#register">REGISTER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header / Logo zone -->
+<header class="header-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- mini note: I usually center logos differently but this worked -->
+            <div class="col-md-2 text-center">
+                <img class="logo-image" src="images/tutortimelogo.png" alt="Tutor Time Logo" />
+            </div>
+            <div class="col-md-10 col-8">
+                <h1 class="header-title">TUTOR TIME - Connecting Minds, Building Futures</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- NAV BAR -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        <!-- I'll probably style this toggler later -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav me-auto">
+                <!-- Might replace ▼ with icons later -->
+                <li class="nav-item"><a class="nav-link" href="#home">Home ▼</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tutors">Tutors ▼</a></li>
+                <li class="nav-item"><a class="nav-link" href="#schedule">Schedule a Demo ▼</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us ▼</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact ▼</a></li>
+            </ul>
+
+            <!-- Right Side Icons -->
+            <div class="d-flex align-items-center">
+                <button class="nav-icon-btn" id="wishlistBtn">
+                    <i class="bi bi-list-check"></i>
+                </button>
+                <button class="nav-icon-btn" id="favoritesBtn">
+                    <i class="bi bi-heart"></i>
+                </button>
+
+                <!-- Cart button w badge -->
+                <button class="nav-icon-btn position-relative" id="cartBtn">
+                    <i class="bi bi-cart"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- SEARCH -->
+<section class="search-section">
+    <div class="container">
+        <div class="col-lg-8 mx-auto">
+            <div class="input-group">
+                <input id="searchInput" class="form-control search-input" placeholder="Search something..." />
+                <button id="searchBtn" class="btn search-btn">Search</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Login -->
+<section class="login-section">
+    <div class="container d-flex justify-content-center">
+        <div class="login-box">
+            <h2 class="text-center">WELCOME BACK! LOGIN TO YOUR ACCOUNT</h2>
+
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Email Address">
+                <input type="password" id="password" placeholder="Password">
+
+                <div class="login-links d-flex justify-content-between">
+                    <a href="#forgot">Forgot Password?</a>
+                    <a href="#signup">Sign Up!</a>
+                </div>
+
+                <button type="submit" class="login-btn">LOGIN</button>
+            </form>
+
+            <!-- Social login buttons -->
+            <button class="social-btn" id="googleLogin">
+                <img src="images/googlelogo.png" class="social-icon" alt="Google">
+                Continue with Google
+            </button>
+
+            <button class="social-btn" id="facebookLogin">
+                <img src="images/fblogo.png" class="social-icon" alt="Facebook">
+                Continue with Facebook
+            </button>
+
+            <button class="social-btn" id="appleLogin">
+                <img src="images/applelogo.png" class="social-icon" alt="Apple">
+                Continue with Apple
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer-custom">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Contact column -->
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div><i class="bi bi-telephone"></i> +92-XXX-XXXXXXX</div>
+                <div><i class="bi bi-envelope"></i> info@tutortime.com</div>
+                <div><i class="bi bi-geo-alt"></i> XYZ Road, ABC City, Pakistan</div>
+            </div>
+
+            <!-- Quick links -->
+            <div class="col-lg-4 col-md-6 mb-3 text-center">
+                <div class="footer-links">
+                    <a href="#faqs">FAQs</a>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#about">About Us</a>
+                    <a href="#terms">Terms and Conditions</a>
+                </div>
+            </div>
+
+            <!-- Social icons (FIXED: in a bootstrap column) -->
+            <div class="col-lg-4 col-12 footer-socials text-end">
+                <a href="#"><img src="images/fblogo.png" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="images/xlogo.png" alt="X" class="social-icon"></a>
+                <a href="#"><img src="images/instalogo.png" alt="Instagram" class="social-icon"></a>
+                <a href="#"><img src="images/youtubelogo.png" alt="YouTube" class="social-icon"></a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- JS bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // *** LOGIN HANDLING ***
+    const loginForm = document.getElementById('loginForm');
+
+    // I usually over-comment login code so future me knows what's going on
+    loginForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // avoid refresh (my least favorite bug)
+
+        let emailVal = document.getElementById('email').value.trim();
+        let passVal = document.getElementById('password').value;
+
+        if (!emailVal || !passVal) {
+            alert("Oops, missing email or password.");
+            return;
+        }
+
+        // TODO: Actually authenticate — leaving this as a note for future-me
+        alert("Login successful! (Well… fake-successful for now)");
+    });
+
+    // *** SEARCH FEATURE ***
+    const searchBtn = document.getElementById('searchBtn');
+    const searchInput = document.getElementById('searchInput');
+
+    searchBtn.onclick = () => {
+        let term = searchInput.value || ""; // old habit: using a default even when unnecessary
+        if (term.length < 1) {
+            alert("Please type something to search.");
+        } else {
+            alert("Searching for: " + term);
+        }
+    };
+
+    // For enter key — I always add this because I forget it as a user
+    searchInput.addEventListener("keypress", function(e) {
+        if (e.key === "Enter") searchBtn.click();
+    });
+
+    // *** SOCIAL BUTTONS ***
+    document.getElementById('googleBtn').onclick = () => alert("Google login (pretend)");
+    document.getElementById('facebookBtn').onclick = () => alert("Facebook login (pretend)");
+    document.getElementById('appleBtn').onclick = () => alert("Apple login (pretend)");
+
+    // *** NAV ICONS ***
+    document.getElementById('listBtn').onclick = () => alert("Opening list… maybe later");
+    document.getElementById('wishlistBtn').onclick = () => alert("Wishlist coming soon!");
+
+    let cartItems = 0; // maybe I'll store this elsewhere later
+    document.getElementById('cartBtn').onclick = () => {
+        if (cartItems === 0) {
+            alert("Cart is empty (for now)");
+        } else {
+            alert("You have " + cartItems + " items in cart");
+        }
+    };
+
+</script>
+
+</body>
+</html>
