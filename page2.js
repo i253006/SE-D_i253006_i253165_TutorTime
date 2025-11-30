@@ -1,4 +1,21 @@
-// Basic search handler (placeholder for actual logic later)
+// *** LOGIN HANDLING ***
+    const loginForm = document.getElementById('loginForm');
+
+    // I usually over-comment login code so future me knows what's going on
+    loginForm.addEventListener('submit', function(e) {
+
+        let emailVal = document.getElementById('email').value.trim();
+        let passVal = document.getElementById('password').value;
+
+        if (!emailVal || !passVal) {
+            alert("Oops, missing email or password.");
+            return;
+        }
+
+        alert("Login successful!");
+    });
+
+    // *** SEARCH FEATURE ***
     const searchBtn = document.getElementById('searchBtn');
     const searchInput = document.getElementById('searchInput');
 
@@ -15,7 +32,7 @@
         if (e.key === "Enter") searchBtn.click();
     });
 
-    // List icon example
+    // *** SOCIAL BUTTONS ***
     document.getElementById('wishlistBtn').addEventListener('click', () => {
         alert("Viewing wishlist");
     });
@@ -25,7 +42,7 @@
         alert("Favorites Clicked");
     });
 
-
+    // Cart logic (extremely basic)
     let cartCount = 0;
     const cartBadge = document.getElementById('cartBadge');
 

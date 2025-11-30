@@ -1,4 +1,4 @@
-// Basic search handler (placeholder for actual logic later)
+    // *** SEARCH FEATURE ***
     const searchBtn = document.getElementById('searchBtn');
     const searchInput = document.getElementById('searchInput');
 
@@ -15,7 +15,7 @@
         if (e.key === "Enter") searchBtn.click();
     });
 
-    // List icon example
+    // *** SOCIAL BUTTONS ***
     document.getElementById('wishlistBtn').addEventListener('click', () => {
         alert("Viewing wishlist");
     });
@@ -25,7 +25,7 @@
         alert("Favorites Clicked");
     });
 
-
+    // Cart logic (extremely basic)
     let cartCount = 0;
     const cartBadge = document.getElementById('cartBadge');
 
@@ -36,3 +36,6 @@
             alert("Cart items: " + cartCount);
         }
     });
+
+
+

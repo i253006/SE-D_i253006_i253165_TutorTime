@@ -18,9 +18,9 @@
     <div class="top-bar">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <a href="#about">ABOUT US</a>
+                <a href="page8.html">ABOUT US</a>
                 <div>
-                    <a href="#login">LOGIN</a> <span class="text-light">|</span> <a href="#register">REGISTER</a>
+                    <a href="page2.html">LOGIN</a> <span class="text-light">|</span> <a href="page2.html">REGISTER</a>
                 </div>
             </div>
         </div>
@@ -41,41 +41,35 @@
 </header>
 
 <!-- NAV BAR -->
-<nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-        <!-- I'll probably style this toggler later -->
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-custom">
+    <div class="container d-flex justify-content-between align-items-center">
 
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav me-auto">
-                <!-- Might replace ▼ with icons later -->
-                <li class="nav-item"><a class="nav-link" href="#home">Home ▼</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tutors">Tutors ▼</a></li>
-                <li class="nav-item"><a class="nav-link" href="#schedule">Schedule a Demo ▼</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Us ▼</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact ▼</a></li>
-            </ul>
+        <ul class="navbar-nav d-flex flex-row gap-3">
+            <li class="nav-item"><a class="nav-link" href="page1.html">Home ▼</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tutors">Tutors ▼</a></li>
+            <li class="nav-item"><a class="nav-link" href="#schedule">Schedule a Demo ▼</a></li>
+            <li class="nav-item"><a class="nav-link" href="page8.html">About Us ▼</a></li>
+            <li class="nav-item"><a class="nav-link" href="page9.html">Contact ▼</a></li>
+        </ul>
 
-            <!-- Right Side Icons -->
-            <div class="d-flex align-items-center">
-                <button class="nav-icon-btn" id="wishlistBtn">
-                    <i class="bi bi-list-check"></i>
-                </button>
-                <button class="nav-icon-btn" id="favoritesBtn">
-                    <i class="bi bi-heart"></i>
-                </button>
+        <div class="d-flex align-items-center gap-2">
+            <button class="nav-icon-btn" id="wishlistBtn">
+                <i class="bi bi-list-check"></i>
+            </button>
 
-                <!-- Cart button w badge -->
-                <button class="nav-icon-btn position-relative" id="cartBtn">
-                    <i class="bi bi-cart"></i>
-                    <span class="cart-badge" id="cartBadge">0</span>
-                </button>
-            </div>
+            <button class="nav-icon-btn" id="favoritesBtn">
+                <i class="bi bi-heart"></i>
+            </button>
+
+            <button class="nav-icon-btn position-relative" id="cartBtn">
+                <i class="bi bi-cart"></i>
+                <span class="cart-badge" id="cartBadge">0</span>
+            </button>
         </div>
+
     </div>
 </nav>
+
 
 <!-- SEARCH -->
 <section class="search-section">
@@ -126,7 +120,7 @@
     </div>
 </section>
 
-
+*All the images used in the website are AI generated (Gemini AI)
 <!-- FOOTER -->
 <footer class="footer-custom">
     <div class="container">
@@ -142,9 +136,9 @@
             <!-- Quick links -->
             <div class="col-lg-4 col-md-6 mb-3 text-center">
                 <div class="footer-links">
-                    <a href="#faqs">FAQs</a>
+                    <a href="page9.html">FAQs</a>
                     <a href="#privacy">Privacy Policy</a>
-                    <a href="#about">About Us</a>
+                    <a href="page8.html">About Us</a>
                     <a href="#terms">Terms and Conditions</a>
                 </div>
             </div>
@@ -162,65 +156,9 @@
 </footer>
 
 <!-- JS bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
 
-<script>
-    // *** LOGIN HANDLING ***
-    const loginForm = document.getElementById('loginForm');
-
-    // I usually over-comment login code so future me knows what's going on
-    loginForm.addEventListener('submit', function(e) {
-        e.preventDefault(); // avoid refresh (my least favorite bug)
-
-        let emailVal = document.getElementById('email').value.trim();
-        let passVal = document.getElementById('password').value;
-
-        if (!emailVal || !passVal) {
-            alert("Oops, missing email or password.");
-            return;
-        }
-
-        // TODO: Actually authenticate — leaving this as a note for future-me
-        alert("Login successful! (Well… fake-successful for now)");
-    });
-
-    // *** SEARCH FEATURE ***
-    const searchBtn = document.getElementById('searchBtn');
-    const searchInput = document.getElementById('searchInput');
-
-    searchBtn.onclick = () => {
-        let term = searchInput.value || ""; // old habit: using a default even when unnecessary
-        if (term.length < 1) {
-            alert("Please type something to search.");
-        } else {
-            alert("Searching for: " + term);
-        }
-    };
-
-    // For enter key — I always add this because I forget it as a user
-    searchInput.addEventListener("keypress", function(e) {
-        if (e.key === "Enter") searchBtn.click();
-    });
-
-    // *** SOCIAL BUTTONS ***
-    document.getElementById('googleBtn').onclick = () => alert("Google login (pretend)");
-    document.getElementById('facebookBtn').onclick = () => alert("Facebook login (pretend)");
-    document.getElementById('appleBtn').onclick = () => alert("Apple login (pretend)");
-
-    // *** NAV ICONS ***
-    document.getElementById('listBtn').onclick = () => alert("Opening list… maybe later");
-    document.getElementById('wishlistBtn').onclick = () => alert("Wishlist coming soon!");
-
-    let cartItems = 0; // maybe I'll store this elsewhere later
-    document.getElementById('cartBtn').onclick = () => {
-        if (cartItems === 0) {
-            alert("Cart is empty (for now)");
-        } else {
-            alert("You have " + cartItems + " items in cart");
-        }
-    };
-
-</script>
+<script src="page2.js"></script>
 
 </body>
 </html>
