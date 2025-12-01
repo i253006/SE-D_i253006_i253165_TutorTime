@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="page 6.css">
+    <link rel="stylesheet" href="page6.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutor Time</title>
@@ -10,6 +10,182 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e8e8e8;
+}
+
+/* Header */
+.top-header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+    border-bottom: 2px solid #d5d5d5;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 90px;
+}
+
+.profile-icon {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.auth-links a {
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+/* Navigation */
+.navbar {
+    background: #1f1f1f;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.searchbar input {
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+}
+
+.searchbar button {
+    padding: 6px 12px;
+    border: none;
+    background: #444;
+    color: white;
+    border-radius: 6px;
+}
+
+.icon {
+    width: 25px;
+    margin-left: 10px;
+}
+
+/* Tooltips */
+.press-info {
+    text-align: center;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+/* FILTERS */
+.filters {
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* FEATURES SECTION */
+.features {
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    background: #eae6e7;
+}
+
+.feature-box {
+    text-align: center;
+}
+
+.feature-box img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Individual icon styling */
+.wish-icon {
+    width: 95px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
+}
+
+.cart-icon {
+    width: 100px;
+}
+
+.profile-icon-big {
+    width: 85px;
+}
+
+.fav-icon {
+    width: 90px;
+}
+.feature-box img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+#wishlistIcon {
+    width: 100px;
+}
+#cartIcon {
+    width: 100px;
+}
+#profileIcon {
+    width: 90px;
+}
+#favIcon {
+    width: 95px;
+}
+
+/* FOOTER */
+footer {
+    background: #3c3c4c;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social i {
+    font-size: 22px;
+    margin-left: 12px;
+}
+
+</style>
 <body>
 
     <!-- Top Header -->

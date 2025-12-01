@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="page 3.css">
+    <link rel="stylesheet" href="page5.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutor Time</title>
@@ -60,81 +60,65 @@
     <!-- Tooltips -->
     <p class="press-info">Press ❤️ to add in wishlist<br>Press 📝 to add in wishlist</p>
 
-    <!-- Main Section -->
-    <section class="main">
-        <h2>Select your City, Class and Subject</h2>
 
-        <div class="filters">
-            <input type="text" placeholder="City (ISB, LHR, KHI)">
-            <input type="text" placeholder="Class">
-        </div>
+        <!-- LEFT SIDE: SELECTED TUTOR -->
+        <div class="left-panel">
 
-        <!-- Subject Cards -->
-        <div class="subjects">
+            <h2>Selected Tutor:</h2>
 
-            <!-- Card Template -->
-            <div class="card">
-                <img src="images/subject (1).png" class="subject-icon">
-                <h3>Maths</h3>
-                <button class="select-btn">SELECT</button>
-                <div class="card-icons">
-                    ❤️ 📝
+            <div class="tutor-box">
+                <img src="images/tutor1.png" class="tutor-img">
+
+                <h3>Ali Khan</h3>
+
+                <div class="stars">★★★★★</div>
+
+                <div class="action-icons">
+                    <span class="trash">🗑</span>
+                    <span class="heart">♡</span>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="images/subject (1).png" class="subject-icon">
-                <h3>Physics</h3>
-                <button class="select-btn">SELECT</button>
-                <div class="card-icons">❤️ 📝</div>
-            </div>
+            <h3>About Tutor:</h3>
 
-            <div class="card">
-                <img src="images/subject (1).png" class="subject-icon">
-                <h3>Biology</h3>
-                <button class="select-btn">SELECT</button>
-                <div class="card-icons">❤️ 📝</div>
-            </div>
-
-            <div class="card">
-                <img src="images/subject (1).png" class="subject-icon">
-                <h3>Chemistry</h3>
-                <button class="select-btn">SELECT</button>
-                <div class="card-icons">❤️ 📝</div>
-            </div>
-
-            <div class="card">
-                <img src="images/subject (1).png" class="subject-icon">
-                <h3>Computer</h3>
-                <button class="select-btn">SELECT</button>
-                <div class="card-icons">❤️ 📝</div>
-            </div>
-
-            <div class="card">
-                <img src="images/subject (1).png" class="subject-icon">
-                <h3>Calculus</h3>
-                <button class="select-btn">SELECT</button>
-                <div class="card-icons">❤️ 📝</div>
-            </div>
-
-            <div class="card">
-                <img src="images/subject (1).png" class="subject-icon">
-                <h3>Data Structures</h3>
-                <button class="select-btn">SELECT</button>
-                <div class="card-icons">❤️ 📝</div>
-            </div>
-
-            <div class="card">
-                <img src="images/subject (1).png" class="subject-icon">
-                <h3>Business Maths</h3>
-                <button class="select-btn">SELECT</button>
-                <div class="card-icons">❤️ 📝</div>
-            </div>
-
+            <p class="tutor-description">
+                Ali Khan is an experienced maths tutor with over 7 years of 
+                teaching expertise, specializing in simplifying complex concepts 
+                for students of all levels. His strong analytical skills and 
+                personalized teaching approach help learners build confidence 
+                and excel in mathematics.
+            </p>
         </div>
+
+        <!-- RIGHT SIDE: FEES + FORM -->
+        <div class="right-panel">
+
+            <div class="fee-box">
+                <p><strong>Tutor Charges:</strong> 7000.00 Rs.</p>
+                <p><strong>Service Charges:</strong> 500.00 Rs.</p>
+                <p><strong>VAT:</strong> 250.25 Rs.</p>
+
+                <hr>
+
+                <p class="total"><strong>Total: 7750.25 Rs.</strong></p>
+            </div>
+
+            <form class="checkout-form">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Mobile Number">
+                <textarea placeholder="Address"></textarea>
+
+                <div class="btn-row">
+                    <button type="button" class="light-btn">Continue Shopping</button>
+                    <button type="submit" class="dark-btn">SUBMIT</button>
+                    <button type="button" class="light-btn">Save for later</button>
+                </div>
+            </form>
+        </div>
+
     </section>
 
-  <!-- FOOTER -->
+ <!-- FOOTER -->
 <footer class="footer-custom">
     <div class="container">
         <div class="row align-items-center">
