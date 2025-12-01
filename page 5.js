@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ===========================================
 
 let selectedTutor = {
-    name: 'Ali Khan',
+    name: 'Alina Khan',
     image: 'images/tutor1.png',
     rating: 5,
     charges: 7000.00,
@@ -648,6 +648,56 @@ style.textContent = `
         animation: slideIn 0.6s ease;
     }
 `;
+function selectAndGo(url) {
+    window.location.href = url;
+}
+const wishlistNavIcon = document.querySelector('.icons img[src="wishlist.png"]');
+if (wishlistNavIcon) {
+    wishlistNavIcon.addEventListener('click', function() {
+        selectAndGo("wishlist.html");
+    });
+}
+const cartNavIcon = document.querySelector('.icons img[src="cart.png"]');
+if (cartNavIcon) {
+    cartNavIcon.addEventListener('click', function() {
+        selectAndGo("cart.html");
+    });
+}
+const heartIcon = document.querySelector('.heart');
+if (heartIcon) {
+    heartIcon.addEventListener('click', function() {
+        toggleWishlist(this);
+        selectAndGo("wishlist.html");
+    });
+}
+const trashIcon = document.querySelector('.trash');
+if (trashIcon) {
+    trashIcon.addEventListener('click', function() {
+        removeTutor();
+        selectAndGo("tutors.html");
+    });
+}
+const tutorImage = document.querySelector('.tutor-img');
+if (tutorImage) {
+    tutorImage.addEventListener('click', function() {
+        selectAndGo("tutor-profile.html");
+    });
+}
+const continueBtn = document.querySelector('.light-btn:nth-of-type(1)');
+if (continueBtn) {
+    continueBtn.addEventListener('click', function() {
+        selectAndGo("tutors.html");
+    });
+}
+const submitBtn = document.querySelector('.dark-btn');
+if (submitBtn) {
+    submitBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        handleSubmit();
+        selectAndGo("payment.html");
+    });
+}
+
 document.head.appendChild(style);
 
 // ===========================================

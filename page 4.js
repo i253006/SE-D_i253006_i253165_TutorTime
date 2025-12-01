@@ -88,6 +88,25 @@ function updateWishlistIcon() {
         }
     }
 }
+// HEART ❤️ toggle
+document.querySelectorAll(".heart").forEach(heart => {
+    heart.addEventListener("click", () => {
+        if (heart.textContent === "♡") {
+            heart.textContent = "❤️";      // add to wishlist
+            heart.style.color = "red";
+        } else {
+            heart.textContent = "♡";       // remove from wishlist
+            heart.style.color = "black";
+        }
+    });
+});
+
+// DOCUMENT 📄 click
+document.querySelectorAll(".doc").forEach(doc => {
+    doc.addEventListener("click", () => {
+        alert("Added to your notes!");
+    });
+});
 
 // ===========================================
 // CART MANAGEMENT

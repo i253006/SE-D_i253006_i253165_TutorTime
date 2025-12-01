@@ -5,9 +5,14 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #e8e8e8;
-}
+ body {
+        font-family: Arial, sans-serif;
+        /* I might tweak the gradient later if it feels too metallic */
+        background: 
+            linear-gradient(#a8a8a8 100%);
+        background-attachment: fixed;
+    }
+
 
 /* Header */
 .top-header {
@@ -95,14 +100,14 @@ body {
 }
 
 .left-panel {
-    width: 50%;
+    width: 100%;
     background: #cbbbbb;
     padding: 20px;
     border-radius: 8px;
 }
 
 .right-panel {
-    width: 50%;
+    width: 100%;
     background: #cbbbbb;
     padding: 20px;
     border-radius: 8px;
