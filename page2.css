@@ -1,4 +1,4 @@
-/* Just grouping some colors here - might reorganize later */
+
 :root {
     --dark-main: rgba(71, 71, 81, 0.95);
     --grayish: rgba(100, 100, 120, 0.9);
@@ -8,7 +8,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    /* I might tweak the gradient later if it feels too metallic */
     background:
         linear-gradient(#a8a8a8 100%);
     background-attachment: fixed;
@@ -37,7 +36,7 @@ body {
     padding: 15px;
 }
 
-/* Logo — I kept the circle but not entirely sure if we keep it later */
+/* Logo */
 .logo-image {
     width: 115px;
     height: 115px;
@@ -69,7 +68,6 @@ body {
     font-weight: bold;
 }
 
-/* I always make these icon buttons slightly too big but leaving it */
 .nav-icon-btn {
     background: none;
     border: none;
@@ -94,8 +92,6 @@ body {
     height: 20px;
     font-size: 12px;
     border-radius: 50%;
-    /* display:flex; */
-    /* align-items:center; */
     justify-content: center;
 }
 
@@ -171,9 +167,7 @@ body {
     font-weight: 500;
     display: flex;
     align-items: center;
-    /* vertically center icon + text */
     gap: 12px;
-    /* spacing between icon and text */
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -187,7 +181,6 @@ body {
     height: 22px;
     object-fit: contain;
     flex-shrink: 0;
-    /* prevents icon from shrinking weirdly */
 }
 
 /* FOOTER */

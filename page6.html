@@ -1,286 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="page6.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutor Time</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEADER - TUTOR TIME</title>
+    <!-- Bootstrap CSS - REQUIRED -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-
-body {
-    background: #e8e8e8;
-}
-
-/* Header */
-.top-header {
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
-    align-items: center;
-    border-bottom: 2px solid #d5d5d5;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo {
-    width: 90px;
-}
-
-.profile-icon {
-    width: 30px;
-    margin-left: 10px;
-}
-
-.auth-links a {
-    font-weight: 500;
-    margin: 0 5px;
-}
-
-/* Navigation */
-.navbar {
-    background: #1f1f1f;
-    padding: 10px 0;
-}
-
-.navbar ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    justify-content: center;
-    gap: 40px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.searchbar input {
-    padding: 6px;
-    border-radius: 6px;
-    border: none;
-}
-
-.searchbar button {
-    padding: 6px 12px;
-    border: none;
-    background: #444;
-    color: white;
-    border-radius: 6px;
-}
-
-.icon {
-    width: 25px;
-    margin-left: 10px;
-}
-
-/* Tooltips */
-.press-info {
-    text-align: center;
-    font-size: 14px;
-    margin: 15px 0;
-}
-
-/* FILTERS */
-.filters {
-    font-size: 16px;
-    padding-left: 40px;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-}
-/* FEATURES SECTION */
-.features {
-    padding: 40px;
-    display: flex;
-    justify-content: space-around;
-    background: #eae6e7;
-}
-
-.feature-box {
-    text-align: center;
-}
-
-.feature-box img {
-    width: 90px;
-    margin-bottom: 10px;
-}
-
-.feature-box p {
-    font-size: 20px;
-    font-weight: 600;
-}
-/* Individual icon styling */
-.wish-icon {
-    width: 95px;
-    filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
-}
-
-.cart-icon {
-    width: 100px;
-}
-
-.profile-icon-big {
-    width: 85px;
-}
-
-.fav-icon {
-    width: 90px;
-}
-.feature-box img:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-#wishlistIcon {
-    width: 100px;
-}
-#cartIcon {
-    width: 100px;
-}
-#profileIcon {
-    width: 90px;
-}
-#favIcon {
-    width: 95px;
-}
-
-/* FOOTER */
-footer {
-    background: #3c3c4c;
-    color: white;
-    padding: 25px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-links a {
-    margin-right: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.footer-social i {
-    font-size: 22px;
-    margin-left: 12px;
-}
-
-</style>
-<body>
-
-    <!-- Top Header -->
-    <header class="top-header">
-        <div class="logo-area">
-            <img src="images/tutortimelogo.png" class="logo">
-            <h1>TUTOR TIME - Connecting Minds, Building Futures</h1>
+    <link rel="stylesheet" href="page6.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="page8.html">ABOUT US</a>
+          <div>
+            <a href="page2.html">LOGIN</a> <span class="text-light">|</span>
+            <a href="page2.html">REGISTER</a>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="auth-links">
-            <a href="#">LOGIN</a> |
-            <a href="#">REGISTER</a>
-            <img src="profile.png" class="profile-icon">
+    <!-- Header / Logo zone -->
+    <header class="header-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-2 text-center">
+            <img
+              class="logo-image"
+              src="images/tutortimelogo.png"
+              alt="Tutor Time Logo"
+            />
+          </div>
+          <div class="col-md-10 col-8">
+            <h1 class="header-title">
+              TUTOR TIME - Connecting Minds, Building Futures
+            </h1>
+          </div>
+          <div class="col-md-2 text-center">
+            <img
+              src="images/userlogo.png"
+              alt="User Profile"
+              class="user-profile"
+            />
+          </div>
         </div>
+      </div>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-
-            <li class="dropdown">
-                <a href="#">Tutors ▼</a>
-            </li>
-
-            <li class="dropdown">
-                <a href="#">Schedule a Demo ▼</a>
-            </li>
-
-            <li class="dropdown">
-                <a href="#">About Us ▼</a>
-            </li>
-
-            <li><a href="#">Contact</a></li>
-
-            <li class="searchbar">
-                <input type="text" placeholder="Search">
-                <button>Search</button>
-            </li>
-
-            <li class="icons">
-                <img src="wishlist.png" class="icon">
-                <img src="cart.png" class="icon">
-            </li>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-custom">
+      <div class="container d-flex justify-content-between align-items-center">
+        <ul class="navbar-nav d-flex flex-row gap-3">
+          <li class="nav-item">
+            <a class="nav-link" href="page1.html">Home ▼</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page3.html">Tutors and Subjects▼</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">Schedule a Demo ▼</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page8.html">About Us ▼</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page9.html">Contact ▼</a>
+          </li>
         </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <button class="nav-icon-btn" id="wishlistBtn">
+            <i class="bi bi-list-check"></i>
+          </button>
+
+          <button class="nav-icon-btn" id="favoritesBtn">
+            <i class="bi bi-heart"></i>
+          </button>
+
+          <button class="nav-icon-btn position-relative" id="cartBtn">
+            <i class="bi bi-cart"></i>
+            <span class="cart-badge" id="cartBadge">1</span>
+          </button>
+        </div>
+      </div>
     </nav>
 
-    <!-- Tooltips -->
-    <p class="press-info">Press ❤️ to add in wishlist<br>Press 📝 to add in wishlist</p>
+    <!-- SEARCH -->
+    <section class="search-section">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <div class="input-group">
+            <input
+              id="searchInput"
+              class="form-control search-input"
+              placeholder="Search something..."
+            />
+            <button id="searchBtn" class="btn search-btn">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-   <section class="features">
-    <div class="feature-box">
-        <img id="wishlistIcon" src="images/wish.png" alt="Wishlist">
+    <section class="features">
+      <div class="feature-box">
+        <img src="images/wish.png" alt="Wishlist" />
         <p>Wish list</p>
-    </div>
+      </div>
 
-    <div class="feature-box">
-        <img id="cartIcon" src="images/cart.png" alt="Selected Tutor">
+      <div class="feature-box">
+        <img src="images/cart.png" alt="Selected Tutor" />
         <p>Selected Tutor</p>
-    </div>
+      </div>
 
-    <div class="feature-box">
-        <img id="profileIcon" src="images/profile.png" alt="Profile">
+      <div class="feature-box">
+        <img src="images/profile.png" alt="Profile" />
         <p>Profile</p>
-    </div>
+      </div>
 
-    <div class="feature-box">
-        <img id="favIcon" src="images/hrt.png" alt="Favourites">
+      <div class="feature-box">
+        <img src="images/hrt.png" alt="Favourites" />
         <p>Favourites</p>
-    </div>
-</section>
+      </div>
+    </section>
 
+    *All the images used in the website are AI generated (Gemini AI)
     <!-- FOOTER -->
-    <footer>
-        <div class="footer-left">
-            <p><i class="fa-solid fa-phone"></i> +92-XXX-XXXXXXX</p>
-            <p><i class="fa-solid fa-envelope"></i> info@tutortime.com</p>
-            <p><i class="fa-solid fa-location-dot"></i> XYZ Road, ABC City, Pakistan</p>
-        </div>
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Contact column -->
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div><i class="bi bi-telephone"></i> +92-XXX-XXXXXXX</div>
+            <div><i class="bi bi-envelope"></i> info@tutortime.com</div>
+            <div>
+              <i class="bi bi-geo-alt"></i> XYZ Road, ABC City, Pakistan
+            </div>
+          </div>
 
-        <div class="footer-links">
-            <a href="#">FAQs</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">About</a>
-            <a href="#">Terms and Conditions</a>
-        </div>
+          <!-- Quick links -->
+          <div class="col-lg-4 col-md-6 mb-3 text-center">
+            <div class="footer-links">
+              <a href="page9.html">FAQs</a>
+              <a href="#privacy">Privacy Policy</a>
+              <a href="page8.html">About Us</a>
+              <a href="#terms">Terms and Conditions</a>
+            </div>
+          </div>
 
-        <div class="footer-social">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
+          <!-- Social icons -->
+          <div class="col-lg-4 col-12 footer-socials">
+            <img src="images/fblogo.png" alt="Facebook" class="social-icon" />
+            <img src="images/xlogo.png" alt="X" class="social-icon" />
+            <img
+              src="images/instalogo.png"
+              alt="Instagram"
+              class="social-icon"
+            />
+            <img
+              src="images/youtubelogo.png"
+              alt="YouTube"
+              class="social-icon"
+            />
+          </div>
         </div>
+      </div>
     </footer>
-
-</body>
+    <script src="page6.js"></script>
+  </body>
 </html>
