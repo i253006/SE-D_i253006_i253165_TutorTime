@@ -1,0 +1,230 @@
+/* Just grouping some colors here - might reorganize later */
+:root {
+    --dark-main: rgba(71, 71, 81, 0.95);
+    --grayish: rgba(100, 100, 120, 0.9);
+    --faded-light: rgba(180, 180, 180, 0.85);
+    --btnish: rgba(110, 100, 100, 0.9);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* I might tweak the gradient later if it feels too metallic */
+    background:
+        linear-gradient(#a8a8a8 100%);
+    background-attachment: fixed;
+}
+
+/* Top strip across page */
+.top-bar {
+    background: var(--grayish);
+    padding: 8px;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.top-bar a:hover {
+    color: #ffffffeb;
+}
+
+/* Header area with title + logo */
+.header-section {
+    background: var(--faded-light);
+    padding: 15px;
+}
+
+/* Logo — I kept the circle but not entirely sure if we keep it later */
+.logo-image {
+    width: 115px;
+    height: 115px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.logo-image:hover {
+    transform: scale(1.2);
+}
+
+.header-title {
+    overflow: hidden;
+    color: #333;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+/* Navigation bar */
+.navbar-custom {
+    background: var(--dark-main);
+}
+
+.navbar-custom .nav-link {
+    color: #fff;
+    padding: 28px;
+    font-weight: bold;
+}
+
+/* I always make these icon buttons slightly too big but leaving it */
+.nav-icon-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-icon-btn:hover {
+    opacity: 0.85;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 3px;
+    right: 4px;
+    background: #e74c3c;
+    color: #fff;
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    /* display:flex; */
+    /* align-items:center; */
+    justify-content: center;
+}
+
+/* Search section following navbar */
+.search-section {
+    padding: 30px;
+}
+
+.search-input {
+    border: 2px solid #555;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 15px 40px;
+    border: none;
+    font-weight: 700;
+    background: #3498db;
+    color: white;
+}
+
+.search-btn:hover {
+    background: #2980b9;
+}
+
+/* Login area */
+.login-section {
+    padding: 60px 0;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 460px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.login-box input {
+    background: #f3f3f3;
+    padding: 14px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.login-links a {
+    color: #4a7ba7;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 18px;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    /* vertically center icon + text */
+    gap: 12px;
+    /* spacing between icon and text */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #efefef;
+}
+
+.social-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
+    /* prevents icon from shrinking weirdly */
+}
+
+/* FOOTER */
+.footer-custom {
+    background: var(--dark-main);
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-links {
+    white-space: nowrap;
+}
+
+.footer-links a {
+    margin: 4px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #381212;
+}
+
+.footer-socials {
+    text-align: right;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 6px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.12);
+}
